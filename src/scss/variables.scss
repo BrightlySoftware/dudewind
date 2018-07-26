@@ -1,0 +1,34 @@
+/* dude brand */
+$dude-blue: #003d4c;
+$dude-red: #ff5c39;
+$activation-blue: #87b2d7;
+$light-blue: #c6dae7;
+$gray-blue: #5b7f95;
+$navy-blue: #00263a;
+
+/* other vars */
+$filter-icon-color: #349cde;
+$dark-gray: #727272;
+$gray: #aaa;
+$light-gray: #ddd;
+$warn: #f89e1b;
+$error: #f65b39;
+$success: #39c06f;
+$box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+$box-shadow-light: 0 0 5px rgba(0, 0, 0, 0.3);
+
+$border-light: #ccc;
+$alt-grid-row: #f3f3f3;
+
+$input-margin: 0;
+$input-height: 1.5rem;
+$header-height: 64px;
+$filter-panel-width: 50px;
+$filter-panel-width-open: 250px;
+$grid-row-height: 48px;
+$queue-width: 300px;
+
+$trans: 0.2s ease-in-out;
+$trans-long: 0.5s ease-in-out;
+
+@import './mixins';

@@ -1,6 +1,10 @@
 {
+    "name": "@dudesolutions/dudewind",
+    "version": "0.0.1",
+    "description": "A css utility library to help standardize dude products",
     "scripts": {
-        "build": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js && npm run scss",
+        "build": "npm run compile && npm run scss",
+        "compile": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
         "scss": "mkdir -p ./dist && cp -R ./src/scss ./dist/"
     },
     "devDependencies": {

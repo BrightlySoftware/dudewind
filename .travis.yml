@@ -16,7 +16,6 @@ before_deploy:
   - git push https://$GITHUB_TOKEN@github.com/DudeSolutions/dudewind --tags
 deploy:
   provider: npm
-  email: $NPM_EMAIL
   api_key: $NPM_TOKEN
   on:
     tags: false

@@ -1,6 +1,7 @@
 module.exports = {
-    syntax: 'postcss-scss',
-    plugins: [
-        require('tailwindcss')('./tailwind.js')
-    ]
+  syntax: 'postcss-scss',
+  plugins: [
+    require('postcss-import'),
+    require('tailwindcss')('./tailwind.js')
+  ]
 }

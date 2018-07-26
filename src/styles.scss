@@ -1,8 +1,5 @@
-@import 'scss/variables.scss';
-@import 'scss/mixins.scss';
+@import 'common/variables.scss';
 
-@tailwind preflight;
-
-@tailwind components;
-
-@tailwind utilities;
+@import "../node_modules/tailwindcss/preflight";
+@import "../node_modules/tailwindcss/components";
+@import "../node_modules/tailwindcss/utilities";

@@ -1,4 +1,5 @@
 # Dudewind CSS 
+[![Build Status](https://travis-ci.org/DudeSolutions/dudewind.svg?branch=master)](https://travis-ci.org/DudeSolutions/dudewind)
 
 This css utility library is based off of [Tailwind CSS](https://tailwindcss.com).
 It implements Dude Solutions branding and standardized component styling.

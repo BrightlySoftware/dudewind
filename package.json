@@ -3,7 +3,8 @@
     "version": "0.0.12",
     "description": "A css utility library to help standardize dude products",
     "scripts": {
-        "build": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js"
+        "build:prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js"
+        "build:dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js"
     },
     "main": "./dist/styles.css",
     "devDependencies": {

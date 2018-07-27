@@ -1,6 +1,6 @@
 {
     "name": "@dudesolutions/dudewind",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "A css utility library to help standardize dude products",
     "scripts": {
         "build": "npm run compile && npm run scss",

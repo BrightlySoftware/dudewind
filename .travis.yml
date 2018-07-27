@@ -7,7 +7,7 @@ branches:
 git:
   branch: master
 before_deploy:
-  - npm run build
+  - npm run build:prod
 deploy:
   provider: npm
   tag: next

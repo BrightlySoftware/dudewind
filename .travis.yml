@@ -6,16 +6,11 @@ branches:
     - master
 git:
   branch: master
-before_script:
-  - git checkout master
-script:
-  - npm run build
-  - npm version patch -m "[CHORE] Bump Version %s [skip ci]"
 before_deploy:
-  - git push https://$GITHUB_TOKEN@github.com/DudeSolutions/dudewind master
-  - git push https://$GITHUB_TOKEN@github.com/DudeSolutions/dudewind --tags
+  - npm run build
 deploy:
   provider: npm
+  tag: next
   api_key: $NPM_TOKEN
   email: $NPM_EMAIL
   on:

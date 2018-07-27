@@ -3,9 +3,7 @@
     "version": "0.0.10",
     "description": "A css utility library to help standardize dude products",
     "scripts": {
-        "build": "npm run compile && npm run scss",
-        "compile": "rimraf dist && cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",
-        "scss": "cp -R ./src/common ./dist/"
+        "build": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js"
     },
     "main": "./dist/styles.css",
     "devDependencies": {
@@ -25,6 +23,7 @@
         "postcss-scss": "^2.0.0"
     },
     "files": [
-        "dist/*"
+        "dist/*",
+        "src/*"
     ]
 }

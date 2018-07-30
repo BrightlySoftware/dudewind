@@ -128,11 +128,7 @@ module.exports = {
   */
 
   fonts: {
-    'sans': [
-      'system-ui',
-      'BlinkMacSystemFont',
-      '-apple-system',
-      'Segoe UI',
+    'primary': [
       'Roboto',
       'Oxygen',
       'Ubuntu',
@@ -142,25 +138,15 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif',
     ],
-    'serif': [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
-      'Georgia',
-      'serif',
-    ],
-    'mono': [
-      'Menlo',
-      'Monaco',
-      'Consolas',
-      'Liberation Mono',
-      'Courier New',
-      'monospace',
+    'secondary': [
+      'Montserrat',
+      'montserrat',
+      'Source Sans',
+      'Helvetica Neue',
+      'Helvetica',
+      'Arial Black',
+      'Arial',
+      'sans-serif',
     ]
   },
 
@@ -187,13 +173,9 @@ module.exports = {
   textSizes: {
     'xs': '.75rem',     // 12px
     'sm': '.875rem',    // 14px
-    'base': '1rem',     // 16px
+    'md': '1rem',     // 16px
     'lg': '1.125rem',   // 18px
     'xl': '1.25rem',    // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
   },
 
 
@@ -212,15 +194,11 @@ module.exports = {
   */
 
   fontWeights: {
-    'hairline': 100,
-    'thin': 200,
     'light': 300,
     'normal': 400,
     'medium': 500,
     'semibold': 600,
     'bold': 700,
-    'extrabold': 800,
-    'black': 900,
   },
 
 
@@ -238,9 +216,7 @@ module.exports = {
 
   leading: {
     'none': 1,
-    'tight': 1.25,
     'normal': 1.5,
-    'loose': 2,
   },
 
 
@@ -333,8 +309,6 @@ module.exports = {
     '0': '0',
     '1': '1px',
     '2': '2px',
-    '4': '4px',
-    '8': '8px',
   },
 
 
@@ -376,9 +350,8 @@ module.exports = {
 
   borderRadius: {
     'none': '0',
-    'sm': '.125rem',
-    default: '.25rem',
-    'lg': '.5rem',
+    default: '.187rem',
+    'round': '50%',
     'full': '9999px',
   },
 
@@ -404,32 +377,18 @@ module.exports = {
   */
 
   width: {
+    '0': '0',
     'auto': 'auto',
-    'px': '1px',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '24': '6rem',
-    '32': '8rem',
-    '48': '12rem',
-    '64': '16rem',
-    '1/2': '50%',
-    '1/3': '33.33333%',
-    '2/3': '66.66667%',
-    '1/4': '25%',
-    '3/4': '75%',
-    '1/5': '20%',
-    '2/5': '40%',
-    '3/5': '60%',
-    '4/5': '80%',
-    '1/6': '16.66667%',
-    '5/6': '83.33333%',
+    '50': '50%',
+    '33': '33.33333%',
+    '66': '66.66667%',
+    '25': '25%',
+    '75': '75%',
+    '20': '20%',
+    '40': '40%',
+    '60': '60%',
+    '80': '80%',
+    '100': '100%',
     'full': '100%',
     'screen': '100vw'
   },
@@ -451,21 +410,9 @@ module.exports = {
   */
 
   height: {
+    '0': '0',
     'auto': 'auto',
-    'px': '1px',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
-    '10': '2.5rem',
-    '12': '3rem',
-    '16': '4rem',
-    '24': '6rem',
-    '32': '8rem',
-    '48': '12rem',
-    '64': '16rem',
+    '100': '100%',
     'full': '100%',
     'screen': '100vh'
   },
@@ -488,6 +435,7 @@ module.exports = {
   minWidth: {
     '0': '0',
     'full': '100%',
+    'screen': '100vw',
   },
 
 
@@ -528,16 +476,9 @@ module.exports = {
   */
 
   maxWidth: {
-    'xs': '20rem',
-    'sm': '30rem',
-    'md': '40rem',
-    'lg': '50rem',
-    'xl': '60rem',
-    '2xl': '70rem',
-    '3xl': '80rem',
-    '4xl': '90rem',
-    '5xl': '100rem',
+    '0': '0',
     'full': '100%',
+    'screen': '100vw',
   },
 
 
@@ -556,6 +497,7 @@ module.exports = {
   */
 
   maxHeight: {
+    '0': '0',
     'full': '100%',
     'screen': '100vh',
   },
@@ -577,14 +519,12 @@ module.exports = {
   */
 
   padding: {
-    'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
+    '5': '0.3125rem',
+    '8': '0.5rem',
+    '10': '0.625rem',
+    '15': '0.9375rem',
+    '20': '1.25rem',
   },
 
 
@@ -605,7 +545,6 @@ module.exports = {
 
   margin: {
     'auto': 'auto',
-    'px': '1px',
     '0': '0',
     '1': '0.25rem',
     '2': '0.5rem',
@@ -632,7 +571,6 @@ module.exports = {
   */
 
   negativeMargin: {
-    'px': '1px',
     '0': '0',
     '1': '0.25rem',
     '2': '0.5rem',
@@ -660,10 +598,10 @@ module.exports = {
   */
 
   shadows: {
-    default: '0 2px 4px 0 rgba(0,0,0,0.10)',
-    'md': '0 4px 8px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.08)',
-    'lg': '0 15px 30px 0 rgba(0,0,0,0.11), 0 5px 15px 0 rgba(0,0,0,0.08)',
-    'inner': 'inset 0 2px 4px 0 rgba(0,0,0,0.06)',
+    default: '2px 2px 4px 0 rgba(0,0,0,0.30)',
+    'text': '1px 1px 2px 0 rgba(0,0,0,0.30)',
+    'box': '2px 2px 4px 0 rgba(0,0,0,0.30)',
+    'modal': '2px 2px 6px 0 rgba(0,0,0,0.30)',
     'none': 'none',
   },
 
@@ -777,7 +715,7 @@ module.exports = {
     backgroundColors: ['responsive', 'hover'],
     backgroundPosition: ['responsive'],
     backgroundRepeat: ['responsive'],
-    backgroundSize: ['responsive'],
+    backgroundSize: ['false'],
     borderColors: ['responsive', 'hover'],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
@@ -797,7 +735,7 @@ module.exports = {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
-    opacity: ['responsive'],
+    opacity: ['false'],
     overflow: ['responsive'],
     padding: ['responsive'],
     pointerEvents: ['responsive'],
@@ -810,13 +748,13 @@ module.exports = {
     textColors: ['responsive', 'hover'],
     textSizes: ['responsive'],
     textStyle: ['responsive', 'hover'],
-    tracking: ['responsive'],
+    tracking: ['false'],
     userSelect: ['responsive'],
     verticalAlign: ['responsive'],
     visibility: ['responsive'],
     whitespace: ['responsive'],
     width: ['responsive'],
-    zIndex: ['responsive'],
+    zIndex: ['false'],
   },
 
 
@@ -835,10 +773,10 @@ module.exports = {
   */
 
   plugins: [
-    require('tailwindcss/plugins/container')({
-      // center: true,
-      // padding: '1rem',
-    }),
+    // require('tailwindcss/plugins/container')({
+    //   // center: true,
+    //   // padding: '1rem',
+    // }),
   ],
 
 

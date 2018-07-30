@@ -1,6 +1,6 @@
 {
     "name": "@dudesolutions/dudewind",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "description": "A css utility library to help standardize dude products",
     "scripts": {
         "build:prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=webpack.config.js",

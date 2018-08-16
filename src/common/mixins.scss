@@ -1,1 +1,68 @@
-@import './variables.scss';
+/*
+*	usage:
+*		input{
+*			@include placeholder{
+*				color:#ccc;
+*				text-shadow:0 0 5px $color;
+*			}
+*		}
+*/
+@mixin placeholder {
+	&::-webkit-input-placeholder	{@content}
+	&:-moz-placeholder			      {@content}
+	&::-moz-placeholder			      {@content}
+	&:-ms-input-placeholder		    {@content}
+}
+
+/*
+*   .site-header {
+*     z-index: z('site-header');
+*   }
+*/
+@function z($name) {
+    @if index($z-indexes, $name) {
+        @return (length($z-indexes) - index($z-indexes, $name));
+    } @else {
+        @warn 'There is no item "#{$name}" in this list; choose one of: #{$z-indexes}';
+        @return null;
+    }
+}
+$z-indexes: (
+    "important",
+    "high",
+    "med",
+    "low",
+    "base",
+    "hide"
+);
+
+/*
+ *      @include hcBlack("border-color", $dude-blue);
+ */
+@mixin hcBlack($property, $color){
+  #{$property}: #{$color};
+  .hc & {
+    #{$property}: black;
+  }
+}
+@mixin hcWhite($property, $color){
+  #{$property}: #{$color};
+  .hc & {
+    #{$property}: white;
+  }
+}
+
+@mixin pseudoIcon($icon, $child_selector) {
+  position: relative;
+  &:before {
+    font-family: 'Material Icons';
+    content: $icon;
+    position: absolute;
+    top: 0;
+    right: 4px;
+    font-size: 16px;
+  }
+  #{$child_selector} {
+    padding-right: 20px;
+  }
+}

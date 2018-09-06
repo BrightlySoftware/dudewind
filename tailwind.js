@@ -526,11 +526,11 @@ module.exports = {
 
   padding: {
     '0': '0',
-    'xs': '0.3125rem',
-    'sm': '0.5rem',
-    'md': '0.625rem',
-    'lg': '0.9375rem',
-    'xl': '1.25rem',
+    'xs': '0.5rem',
+    'sm': '0.625rem',
+    'md': '1.25rem',
+    'lg': '1.5rem',
+    'xl': '2rem',
   },
 
 
@@ -552,11 +552,11 @@ module.exports = {
   margin: {
     'auto': 'auto',
     '0': '0',
-    'xs': '0.3125rem',
-    'sm': '0.5rem',
-    'md': '0.625rem',
-    'lg': '0.9375rem',
-    'xl': '1.25rem',
+    'xs': '0.5rem',
+    'sm': '0.625rem',
+    'md': '1.25rem',
+    'lg': '1.5rem',
+    'xl': '2rem',
   },
 
 
@@ -577,11 +577,11 @@ module.exports = {
 
   negativeMargin: {
     '0': '0',
-    'xs': '0.3125rem',
-    'sm': '0.5rem',
-    'md': '0.625rem',
-    'lg': '0.9375rem',
-    'xl': '1.25rem',
+    'xs': '0.5rem',
+    'sm': '0.625rem',
+    'md': '1.25rem',
+    'lg': '1.5rem',
+    'xl': '2rem',
   },
 
 

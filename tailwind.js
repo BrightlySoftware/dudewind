@@ -526,11 +526,11 @@ module.exports = {
 
   padding: {
     '0': '0',
-    '5': '0.3125rem',
-    '8': '0.5rem',
-    '10': '0.625rem',
-    '15': '0.9375rem',
-    '20': '1.25rem',
+    'xs': '0.3125rem',
+    'sm': '0.5rem',
+    'md': '0.625rem',
+    'lg': '0.9375rem',
+    'xl': '1.25rem',
   },
 
 
@@ -552,12 +552,11 @@ module.exports = {
   margin: {
     'auto': 'auto',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
+    'xs': '0.3125rem',
+    'sm': '0.5rem',
+    'md': '0.625rem',
+    'lg': '0.9375rem',
+    'xl': '1.25rem',
   },
 
 
@@ -578,12 +577,11 @@ module.exports = {
 
   negativeMargin: {
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
+    'xs': '0.3125rem',
+    'sm': '0.5rem',
+    'md': '0.625rem',
+    'lg': '0.9375rem',
+    'xl': '1.25rem',
   },
 
 
@@ -627,12 +625,12 @@ module.exports = {
 
   zIndex: {
     'auto': 'auto',
-    '0': 0,
-    '10': 10,
-    '20': 20,
-    '30': 30,
-    '40': 40,
-    '50': 50,
+    'bg': -1,
+    'base': 1,
+    'section': 10,
+    'element': 100,
+    'nav': 1000,
+    'modal': 10000,
   },
 
 
@@ -760,7 +758,7 @@ module.exports = {
     visibility: ['responsive'],
     whitespace: ['responsive'],
     width: ['responsive'],
-    zIndex: false,
+    zIndex: ['responsive'],
   },
 
 
@@ -798,7 +796,7 @@ module.exports = {
 
   options: {
     prefix: '',
-    important: false,
+    important: true,
     separator: ':',
   },
 

@@ -1,0 +1,23 @@
+.dw-action-bar {
+    display: flex;
+    height: 60px;
+    background-color: $navy-blue;
+    color: white;
+    .dw-action-bar-content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        > div {
+            display: flex;
+        }
+        h1 {
+            display: flex;
+        }
+
+        .v-btn {
+            @apply bg-transparent border-1 border-solid border-white text-white !important;
+        }
+    }
+}

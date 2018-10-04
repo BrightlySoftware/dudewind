@@ -16,6 +16,15 @@
             display: flex;
         }
 
+        .v-label,
+        .material-icons {
+            @apply text-white !important;
+        }
+
+        .v-input__slot:before {
+            @apply border-white !important;
+        }
+
         .v-btn {
             @apply bg-transparent border-1 border-solid border-white text-white !important;
         }

@@ -28,5 +28,13 @@
         .v-btn {
             @apply bg-transparent border-1 border-solid border-white text-white !important;
         }
+
+        .dw-button-indicator {
+            @apply bg-dude-red border-1 border-solid border-white rounded-round absolute;
+            width: 18px;
+            height: 18px;
+            top: 5px;
+            right: 8px;
+        }
     }
 }

@@ -3,6 +3,9 @@
     height: 50px;
     background-color: $navy-blue;
     color: white;
+    &.dw-bulk-action {
+        background-color: $gray-blue;
+    }
     .dw-action-bar-content {
         display: flex;
         width: 100%;

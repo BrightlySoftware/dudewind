@@ -1,6 +1,9 @@
 
 .dw-toolbar {
   @apply bg-dude-blue p-0 !important;
+  .v-toolbar__content{
+    @apply p-0 !important;
+  }
   .v-btn{
       @apply bg-transparent border-white text-white border-solid !important;
   }
@@ -18,9 +21,6 @@
   }
   &.dw-toolbar__light{
     @apply bg-white !important;
-    .v-toolbar__content{
-      @apply p-0 !important;
-    }
     .v-btn{
       @apply border-dude-blue text-dude-blue !important;
     }

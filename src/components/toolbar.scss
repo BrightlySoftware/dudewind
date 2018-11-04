@@ -1,0 +1,38 @@
+
+.dw-toolbar {
+  @apply bg-dude-blue p-0 !important;
+  .v-btn{
+      @apply bg-transparent border-white text-white border-solid !important;
+  }
+  .v-select{
+    @apply p-0 self-center !important;
+    height: 34px;
+    .v-input__slot:after,
+    .v-input__icon .v-icon,
+    .v-select__selection{
+      @apply text-white !important;
+    }
+    .v-input__slot:before{
+      @apply border-white !important;
+    }
+  }
+  &.dw-toolbar__light{
+    @apply bg-white !important;
+    .v-toolbar__content{
+      @apply p-0 !important;
+    }
+    .v-btn{
+      @apply border-dude-blue text-dude-blue !important;
+    }
+    .v-select{
+      .v-input__slot:after,
+      .v-input__icon .v-icon,
+      .v-select__selection{
+        @apply text-dude-blue !important;
+      }
+      .v-input__slot:before{
+        @apply border-dude-blue !important;
+      }
+    }
+  }
+}

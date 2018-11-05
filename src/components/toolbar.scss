@@ -2,18 +2,22 @@
 .dw-toolbar {
   @apply bg-dude-blue p-0 !important;
   .v-toolbar__content{
-    @apply p-0 !important;
+    @apply p-0;
   }
-  .v-btn{
-      @apply bg-transparent border-white text-white border-solid !important;
+  .theme--light.v-btn:not(.v-btn--icon):not(.v-btn--flat),
+  .theme--dark.v-btn:not(.v-btn--icon):not(.v-btn--flat){
+    @apply border-white text-white border-solid;
+    @apply bg-transparent;
+    height: 34px !important;
+    border-radius: 4px;
   }
   .v-select{
-    @apply p-0 self-center !important;
+    @apply p-0 self-center;
     height: 34px;
     .v-input__slot:after,
     .v-input__icon .v-icon,
     .v-select__selection{
-      @apply text-white !important;
+      @apply text-white;
     }
     .v-input__slot:before{
       @apply border-white !important;
@@ -21,14 +25,15 @@
   }
   &.dw-toolbar__light{
     @apply bg-white !important;
-    .v-btn{
-      @apply border-dude-blue text-dude-blue !important;
+    .theme--light.v-btn:not(.v-btn--icon):not(.v-btn--flat),
+    .theme--dark.v-btn:not(.v-btn--icon):not(.v-btn--flat){
+      @apply border-dude-blue text-dude-blue;
     }
     .v-select{
       .v-input__slot:after,
       .v-input__icon .v-icon,
       .v-select__selection{
-        @apply text-dude-blue !important;
+        @apply text-dude-blue;
       }
       .v-input__slot:before{
         @apply border-dude-blue !important;

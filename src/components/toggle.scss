@@ -21,7 +21,7 @@ $switch-width: $toggle-height;
 
     &::after {
         content: '';
-        @apply absolute z-10 border-action-blue bg-white;
+        @apply absolute z-section border-action-blue bg-white;
         top: -1px;
         left: -1px;
         width: $switch-width;

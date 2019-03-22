@@ -9,7 +9,7 @@
     transition: all 250ms ease-in;
 
     &.active {
-        @apply bg-medium-blue border-medium-blue;
+        @apply bg-action-blue border-action-blue;
 
         &::after {
             margin-left: 11px;
@@ -18,7 +18,7 @@
 
     &::after {
         content: '';
-        @apply absolute z-10 border-medium-blue bg-white;
+        @apply absolute z-10 border-action-blue bg-white;
         top: -1px;
         left: -1px;
         width: 17px;

@@ -1,18 +1,20 @@
+$toggle-height: 17px;
+$toggle-width: 28px;
+
 .dw-toggle {
     @apply inline-block relative bg-white cursor-pointer border-light-blue;
-    width: 28px;
-    height: 17px;
-    border-radius: 8.5px;
+    width: $toggle-width;
+    height: $toggle-height;
+    border-radius: $toggle-height/2;
     -webkit-transition: all 250ms ease-in;
     -moz-transition: all 250ms ease-in;
-    -o-transition: all 250ms ease-in;
     transition: all 250ms ease-in;
 
     &.active {
         @apply bg-action-blue border-action-blue;
 
         &::after {
-            margin-left: 11px;
+            margin-left: $toggle-width-$toggle-height;
         }
     }
 
@@ -21,12 +23,11 @@
         @apply absolute z-10 border-action-blue bg-white;
         top: -1px;
         left: -1px;
-        width: 17px;
-        height: 17px;
-        border-radius: 8.5px;
+        width: $toggle-height;  // round-shaped switch
+        height: $toggle-height;
+        border-radius: $toggle-height/2;
         -webkit-transition: all 250ms ease-in;
         -moz-transition: all 250ms ease-in;
-        -o-transition: all 250ms ease-in;
         transition: all 250ms ease-in;
     }
 }

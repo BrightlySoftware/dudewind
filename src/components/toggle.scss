@@ -3,7 +3,7 @@ $toggle-width: 28px;
 $switch-width: $toggle-height;
 
 .dw-toggle {
-    @apply inline-block relative bg-white cursor-pointer border-light-blue;
+    @apply inline-block relative bg-white cursor-pointer border border-light-blue;
     width: $toggle-width;
     height: $toggle-height;
     border-radius: $toggle-height / 2;
@@ -21,7 +21,7 @@ $switch-width: $toggle-height;
 
     &::after {
         content: '';
-        @apply absolute z-section border-action-blue bg-white;
+        @apply absolute z-section border border-action-blue bg-white;
         top: -1px;
         left: -1px;
         width: $switch-width;

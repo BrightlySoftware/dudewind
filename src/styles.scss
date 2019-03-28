@@ -17,7 +17,7 @@
 
 .v-btn {
   @apply rounded !important;
-  &.v-btn--disabled .v-btn__content {
+  &.v-btn--disabled {
     opacity: 0.4;
   }
 }

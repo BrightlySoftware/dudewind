@@ -1,4 +1,3 @@
-@import '../common/variables.scss';
 
 .dw-toolbar {
   @apply bg-navy-blue p-0 !important;
@@ -15,7 +14,6 @@
   }
   .theme--light.v-btn.v-btn--disabled {
     @apply text-white !important;
-    opacity: 0.4;
     .v-icon {
       @apply text-white !important;
     }
@@ -23,7 +21,7 @@
   .split-button {
     .v-menu__activator {
       .theme--light.v-btn.v-btn--disabled:not(.v-btn--icon):not(.v-btn--flat):not(.v-btn--outline) {
-        background-color: $dude-red !important;
+        @apply bg-dude-red !important;
       }
     }
   }
@@ -56,6 +54,12 @@
       }
       .v-input__slot:before{
         @apply border-dude-blue !important;
+      }
+    }
+    .theme--light.v-btn.v-btn--disabled {
+      @apply text-dude-blue !important;
+      .v-icon {
+        @apply text-dude-blue !important;
       }
     }
   }

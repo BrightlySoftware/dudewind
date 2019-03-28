@@ -4,12 +4,26 @@
   .v-toolbar__content{
     @apply p-0 !important;
   }
+ 
   .theme--light.v-btn:not(.v-btn--icon):not(.v-btn--flat),
   .theme--dark.v-btn:not(.v-btn--icon):not(.v-btn--flat){
     @apply border-white text-white border-solid;
     @apply bg-transparent;
     height: 34px !important;
     border-radius: 4px;
+  }
+  .theme--light.v-btn.v-btn--disabled {
+    @apply text-white !important;
+    .v-icon {
+      @apply text-white !important;
+    }
+  }
+  .split-button {
+    .v-menu__activator {
+      .theme--light.v-btn.v-btn--disabled:not(.v-btn--icon):not(.v-btn--flat):not(.v-btn--outline) {
+        @apply bg-dude-red !important;
+      }
+    }
   }
   .v-select{
     @apply p-0 self-center;
@@ -40,6 +54,12 @@
       }
       .v-input__slot:before{
         @apply border-dude-blue !important;
+      }
+    }
+    .theme--light.v-btn.v-btn--disabled {
+      @apply text-dude-blue !important;
+      .v-icon {
+        @apply text-dude-blue !important;
       }
     }
   }

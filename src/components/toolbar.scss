@@ -14,6 +14,7 @@
   }
   .theme--light.v-btn.v-btn--disabled {
     @apply text-white !important;
+    opacity: 0.4;
     .v-icon {
       @apply text-white !important;
     }
@@ -58,6 +59,7 @@
     }
     .theme--light.v-btn.v-btn--disabled {
       @apply text-dude-blue !important;
+      opacity: 0.4;
       .v-icon {
         @apply text-dude-blue !important;
       }

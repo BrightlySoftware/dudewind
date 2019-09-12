@@ -50,7 +50,7 @@ let colors = {
   'dude-red': '#ff5c39',
   'dude-orange-light': '#ffae9c',
   'activation-blue': '#87b2d7',
-  'action-blue': '#4A90E2',
+  'action-blue': '#005FE6',
   'light-blue': '#c6dae7',
   'gray-blue': '#5b7f95',
   'navy-blue': '#00263a',
